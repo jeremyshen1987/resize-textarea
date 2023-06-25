@@ -1,0 +1,98 @@
+:root {
+    box-sizing: border-box;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+form, h1 {
+    background-color: #e5e7eb;
+    width: clamp(300px, 35vw, 700px);
+
+    padding: 20px;
+    /* border: solid 1px gold; */
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+textarea {
+    border: 0;
+    padding: 5px;
+}
+
+
+.name_container, .description_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form label {
+    color: black;
+}
+
+.submit_btn {
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type='button'], button {
+    
+    background-color: black;
+    color: white;
+    padding: 5px 8px;
+    margin-left: auto;
+}
+
+form, input[type='button'] {
+    border-radius: 5px;
+}
+
+
+@media (max-width: 800px){
+    .hamburger_menu {
+        display: inline-block;
+    }
+
+    ul {
+
+        position: absolute;
+        top: 50px;
+        width: clamp(240px, 60vw, 600px);
+        height: 100vh;
+        flex-direction: column;
+
+        background-color: teal;
+    }
+
+    ul > * {
+        text-align: center;
+    }
+
+    .uList {
+        display: none;
+    }
+}
+
+
